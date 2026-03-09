@@ -43,6 +43,7 @@ sequenceDiagram
 ## Installation
 
 - Run the scripts in order
+- `scripts/status.sh` can be run any time to inspect the current service state.
 - To add/remove users, see: [basic administration - Gitolite](https://gitolite.com/gitolite/basic-admin.html)
 
 ## References
