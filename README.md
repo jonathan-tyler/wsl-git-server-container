@@ -1,6 +1,6 @@
 # WSL Git Server Container
 
-Git server running in a WSL container, with Principal of Least Privilege in mind.
+Git server running in a WSL container, with the principal of least privilege in mind.
 
 ```mermaid
 flowchart LR
