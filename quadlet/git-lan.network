@@ -1,0 +1,7 @@
+[Unit]
+Description=LAN git server internal network
+
+[Network]
+NetworkName=__SERVICE_NAME__
+Internal=true
+Options=isolate=true

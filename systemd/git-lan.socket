@@ -1,0 +1,12 @@
+[Unit]
+Description=LAN git server socket
+
+[Socket]
+ListenStream=__LISTEN_ADDRESS__:__LISTEN_PORT__
+Accept=no
+FreeBind=true
+NoDelay=true
+Backlog=128
+
+[Install]
+WantedBy=sockets.target
