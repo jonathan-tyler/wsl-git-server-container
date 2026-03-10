@@ -26,9 +26,6 @@ ensure_layout() {
         "$STATE_DIR" \
         "$HOST_KEY_DIR" \
         /run/sshd
-
-    chown -R git:git "$GIT_HOME" "$STATE_DIR"
-    chmod 0700 "$GIT_HOME/.ssh"
 }
 
 ensure_host_keys() {
@@ -49,9 +46,6 @@ initialize_gitolite() {
         printf 'gitolite is not initialized and %s is missing\n' "$ADMIN_KEY_PATH" >&2
         return
     fi
-
-    chown git:git "$ADMIN_KEY_PATH"
-    chmod 0600 "$ADMIN_KEY_PATH"
 
     su -s /bin/bash git -c "gitolite setup -pk '$ADMIN_KEY_PATH'"
 }
